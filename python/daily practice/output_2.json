@@ -1,0 +1,8 @@
+{
+  "columns": [
+    {"name": "id", "type": "int", "nullable": false},
+    {"name": "name", "type": "string", "nullable": true},
+    {"name": "age", "type": "int", "nullable": true},
+    {"name": "city", "type": "string", "nullable": true}
+  ]
+}

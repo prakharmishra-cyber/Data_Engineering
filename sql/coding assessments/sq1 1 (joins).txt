@@ -1,0 +1,28 @@
+-- Demonstrationo of inner Join
+select *, current_date() ,current_time() from user u1 inner join orders o on u1.userId = o.userId
+
+-- Demonstrationo of left Join
+select *, current_date() ,current_time() from user u1 left join orders o on u1.userId = o.userId
+
+-- Demonstrationo of right Join
+select *, current_date() ,current_time() from user u1 right join orders o on u1.userId = o.userId
+
+-- Demonstrationo of natural Join
+select *, current_date() ,current_time() from user u1 natural join orders o
+
+-- Demonstrationo of cross Join
+select *, current_date() ,current_time() from user u cross join orders o
+
+-- Demonstrationo of equi Join
+select *, current_date() ,current_time() from user u1 join user u2 on u1.role = u2.role
+
+-- Demonstrationo of non-equi Join
+select *, current_date() ,current_time() from user u1 join user u2 on u1.userId >= u2.userId
+
+-- Demonstrationo of self Join
+select *, current_date() ,current_time() from user u1 join user u2 on u1.userId = u2.userId
+
+-- Demonstrationo of full outer Join
+select *, current_date() ,current_time() from user u1 left outer join orders o on u1.userId = o.userId
+union
+select *, current_date() ,current_time() from user u1 right outer join orders o on u1.userId = o.userId
